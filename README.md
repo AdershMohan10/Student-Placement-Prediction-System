@@ -1,4 +1,5 @@
 🎓 Student Placement Prediction System
+
 📌 Project Overview
 
 The Student Placement Prediction System is a machine learning project that predicts whether a student will get placed based on their academic performance, work experience, and demographic attributes.
