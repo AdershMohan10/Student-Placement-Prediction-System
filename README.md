@@ -2,26 +2,19 @@
 
 📌 Project Overview
 
-The Student Placement Prediction System is a machine learning project that predicts whether a student will get placed based on their academic performance, work experience, and demographic attributes.
-This project demonstrates an end-to-end data science workflow including data preprocessing, visualization, machine learning modeling, and evaluation.
+The Student Placement Prediction System is a data science and machine learning project designed to predict whether a student will get placed based on academic performance, work experience, and other profile attributes. The project combines Python-based data analysis and machine learning with Power BI dashboarding to deliver both predictive insights and visual analytics.
 
-🎯 Objectives
+This project was developed as a course-level main Data Science project and follows an end-to-end pipeline: data preprocessing, visualization, model building, evaluation, and dashboard creation.
 
-Analyze factors affecting student placements
+📂 Dataset
 
-Build predictive machine learning models
+Source: Kaggle (Campus Placement Dataset)
 
-Compare multiple models using standard evaluation metrics
+Size: 215 records, 15 features
 
-Create insights suitable for dashboards and business decisions
+Target Variable: status (Placed / Not Placed)
 
-📊 Dataset
-
-Source: Publicly available student placement dataset (MBA students)
-
-Records: 215 students
-
-Features include:
+Key Features:
 
 Academic scores (SSC, HSC, Degree, MBA)
 
@@ -29,82 +22,113 @@ Work experience
 
 Gender, specialization, board types
 
-Placement status (Target variable)
+Placement status (target)
 
-🔧 Technologies Used
+🛠️ Technologies Used
 
 Programming Language: Python
 
 Libraries: Pandas, NumPy, Matplotlib, Scikit-learn
 
-Tools: VS Code, Power BI
+Visualization: Python (Matplotlib), Power BI
+
+IDE: VS Code
 
 🔄 Project Workflow
 
-Data loading and cleaning
+Dataset loading and inspection
 
-Exploratory Data Analysis (EDA)
+Data cleaning and preprocessing
 
-Feature encoding and preprocessing
+Encoding categorical variables
 
-Machine Learning model training
+Exploratory Data Analysis (EDA) using Python
 
-Model evaluation and comparison
+Machine learning model training
 
-Dataset export for Power BI dashboard
-
-🤖 Machine Learning Models
-
-Logistic Regression
-
-Random Forest Classifier
-
-📈 Model Evaluation Metrics
-Model	Accuracy	Precision	Recall	F1-Score
-Logistic Regression	86%	87.9%	93.5%	90.6%
-Random Forest	76.7%	80%	90.3%	84.8%
-🔍 Key Insights
-
-Students with work experience have a significantly higher chance of placement
-
-Academic performance (SSC, Degree percentage) strongly impacts outcomes
-
-Logistic Regression performed better than Random Forest for this dataset
-
-📊 Visualizations
-
-Placement distribution (Placed vs Not Placed)
-
-MBA percentage vs placement status
+Model evaluation using standard metrics
 
 Feature importance analysis
 
-Clean dataset prepared for Power BI dashboarding
+Clean dataset export for Power BI
+
+Interactive Power BI dashboard creation
+
+📊 Visualizations & Dashboarding
+🔹 Python-Based Visualizations
+
+Placement status distribution (Placed vs Not Placed)
+
+Academic performance comparison
+
+MBA percentage vs placement status
+
+Feature importance visualization
+
+🔹 Power BI Dashboard
+
+Interactive dashboard built using the cleaned dataset
+
+Visualizes placement trends and key influencing factors
+
+Includes KPIs, bar charts, and filters for deeper insights
+
+🤖 Machine Learning Models
+
+Two models were trained and evaluated:
+
+1️⃣ Logistic Regression
+
+Accuracy: 86%
+
+Precision: 87.9%
+
+Recall: 93.5%
+
+F1 Score: 90.6%
+
+2️⃣ Random Forest Classifier
+
+Accuracy: 76.7%
+
+Precision: 80%
+
+Recall: 90.3%
+
+F1 Score: 84.8%
+
+📌 Logistic Regression performed better overall and was selected as the final model.
+
+🔑 Key Insights
+
+Work experience is the strongest factor influencing placement
+
+Academic consistency plays a major role
+
+MBA percentage alone does not guarantee placement
+
+Logistic Regression provides better generalization on this dataset
 
 📁 Project Structure
 Student-Placement-Prediction/
 │
 ├── placement_analysis.py        # Main Python script
-├── placement_data.csv           # Original dataset
-├── placement_cleaned.csv        # Cleaned dataset for Power BI
-├── visuals/                     # Generated plots
-└── README.md
+├── clean_dataset_for_powerbi.csv
+├── README.md
+└── PowerBI_Dashboard.pbix       # Power BI dashboard file
 
 🚀 How to Run the Project
+
+Clone the repository
+
+Install dependencies:
+
 pip install pandas numpy matplotlib scikit-learn
+
+
+Run the Python script:
+
 python placement_analysis.py
 
-📌 Future Improvements
 
-Add more ML models (XGBoost, SVM)
-
-Hyperparameter tuning
-
-Deploy as a web app using Streamlit
-
-Integrate live Power BI dashboard
-
-👨‍💻 Author
-
-Adersh Mohan Puthiyedath
-B.Tech Computer Science & Engineering
+Open the Power BI file using the cleaned CSV dataset
