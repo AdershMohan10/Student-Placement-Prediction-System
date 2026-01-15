@@ -1,134 +1,69 @@
-🎓 Student Placement Prediction System
-
-📌 Project Overview
-
-The Student Placement Prediction System is a data science and machine learning project designed to predict whether a student will get placed based on academic performance, work experience, and other profile attributes. The project combines Python-based data analysis and machine learning with Power BI dashboarding to deliver both predictive insights and visual analytics.
-
-This project was developed as a course-level main Data Science project and follows an end-to-end pipeline: data preprocessing, visualization, model building, evaluation, and dashboard creation.
-
-📂 Dataset
-
-Source: Kaggle (Campus Placement Dataset)
-
-Size: 215 records, 15 features
-
-Target Variable: status (Placed / Not Placed)
-
-Key Features:
-
-Academic scores (SSC, HSC, Degree, MBA)
-
-Work experience
-
-Gender, specialization, board types
-
-Placement status (target)
-
-🛠️ Technologies Used
-
-Programming Language: Python
-
-Libraries: Pandas, NumPy, Matplotlib, Scikit-learn
-
-Visualization: Python (Matplotlib), Power BI
-
-IDE: VS Code
-
-🔄 Project Workflow
-
-Dataset loading and inspection
-
-Data cleaning and preprocessing
-
-Encoding categorical variables
-
-Exploratory Data Analysis (EDA) using Python
-
-Machine learning model training
-
-Model evaluation using standard metrics
-
-Feature importance analysis
-
-Clean dataset export for Power BI
-
-Interactive Power BI dashboard creation
-
-📊 Visualizations & Dashboarding
-🔹 Python-Based Visualizations
-
-Placement status distribution (Placed vs Not Placed)
-
-Academic performance comparison
-
-MBA percentage vs placement status
-
-Feature importance visualization
-
-🔹 Power BI Dashboard
-
-Interactive dashboard built using the cleaned dataset
-
-Visualizes placement trends and key influencing factors
-
-Includes KPIs, bar charts, and filters for deeper insights
-
-🤖 Machine Learning Models
-
-Two models were trained and evaluated:
-
-1️⃣ Logistic Regression
-
-Accuracy: 86%
-
-Precision: 87.9%
-
-Recall: 93.5%
-
-F1 Score: 90.6%
-
-2️⃣ Random Forest Classifier
-
-Accuracy: 76.7%
-
-Precision: 80%
-
-Recall: 90.3%
-
-F1 Score: 84.8%
-
-📌 Logistic Regression performed better overall and was selected as the final model.
-
-🔑 Key Insights
-
-Work experience is the strongest factor influencing placement
-
-Academic consistency plays a major role
-
-MBA percentage alone does not guarantee placement
-
-Logistic Regression provides better generalization on this dataset
-
-📁 Project Structure
-Student-Placement-Prediction/
-│
-├── placement_analysis.py        # Main Python script
-├── clean_dataset_for_powerbi.csv
-├── README.md
-└── PowerBI_Dashboard.pbix       # Power BI dashboard file
-
-🚀 How to Run the Project
-
-Clone the repository
-
-Install dependencies:
-
-pip install pandas numpy matplotlib scikit-learn
-
-
-Run the Python script:
-
-python placement_analysis.py
-
-
-Open the Power BI file using the cleaned CSV dataset
+Student Placement Prediction System
+
+This project predicts whether a student will be placed based on academic performance, work experience, specialization, and demographic features. It also provides interactive visual insights using Power BI.
+
+Problem Statement
+To analyze student data and build a machine learning model that predicts placement outcomes and identifies key factors influencing placement.
+
+Dataset
+Campus placement dataset containing:
+- Academic percentages (SSC, HSC, Degree, MBA)
+- Gender
+- Work experience
+- Specialization
+- Placement status
+
+Technologies Used
+- Python
+- Pandas, NumPy
+- Matplotlib, Seaborn
+- Scikit-learn
+- Power BI
+- Jupyter Notebook
+
+Project Workflow
+1. Data cleaning and preprocessing
+2. Exploratory data analysis using Python visualizations
+3. Feature engineering and encoding
+4. Machine learning model training
+5. Model evaluation
+6. Feature importance analysis
+7. Power BI dashboard creation
+
+Machine Learning Models
+- Logistic Regression
+- Random Forest Classifier
+
+Evaluation Metrics
+- Accuracy
+- Precision
+- Recall
+- F1-score
+
+Best Model Performance
+Logistic Regression achieved approximately 86% accuracy.
+
+Important Features Identified
+- Work experience
+- Gender
+- SSC board
+- SSC percentage
+- Degree percentage
+
+Power BI Dashboard
+The Power BI dashboard includes:
+- Overall placement distribution
+- Gender-wise placement analysis
+- Placement rate by specialization
+- Academic performance vs placement
+- Interactive slicers for gender, specialization, and work experience
+
+How to Run
+1. Clone the repository
+2. Install dependencies using requirements.txt
+3. Run notebooks in order from the notebooks folder
+4. Open the Power BI file to view the dashboard
+
+Author
+Adersh Mohan Puthiyedath
+B.Tech Computer Science and Engineering
